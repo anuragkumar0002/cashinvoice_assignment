@@ -25,5 +25,4 @@ public class OrderResponse {
         this.status = status;
     }
 
-    // getters
 }

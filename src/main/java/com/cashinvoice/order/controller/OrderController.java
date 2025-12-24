@@ -36,7 +36,7 @@ public class OrderController {
     public Order getById(@PathVariable String orderId,
                          Authentication auth) {
 
-        String username = auth.getName(); // ✅ principal is String
+        String username = auth.getName();
         boolean isAdmin = auth.getAuthorities().stream()
                 .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
 
@@ -49,7 +49,7 @@ public class OrderController {
             @RequestParam(required = false) String customerId,
             Authentication auth) {
 
-        String username = auth.getName(); // principal is String
+        String username = auth.getName();
         boolean isAdmin = auth.getAuthorities().stream()
                 .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
 

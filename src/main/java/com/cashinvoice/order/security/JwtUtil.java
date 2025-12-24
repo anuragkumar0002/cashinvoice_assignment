@@ -17,7 +17,6 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    // ✅ Secure 256-bit key
     private static final SecretKey KEY =
             Keys.hmacShaKeyFor(
                     "THIS_IS_A_VERY_SECURE_256_BIT_SECRET_KEY_FOR_JWT_2025"

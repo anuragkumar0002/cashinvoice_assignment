@@ -57,7 +57,6 @@ public class OrderService {
                     : repository.findByCustomerId(customerId);
         }
 
-        // USER → always fetch own orders
         return repository.findByCustomerId(username);
     }
 
